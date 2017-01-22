@@ -36,7 +36,7 @@
 @class GHShapeGroup;
 @interface SVGRenderer()
 
-@property (strong, nonatomic)	NSMutableDictionary*	colorMap;
+@property (strong, nonatomic)	NSCache*	colorMap;
 @property (strong, nonatomic)   NSDictionary*   namedObjects;
 @property (strong, nonatomic)   GHStyle*        cssStyle;
 @property (assign)              BOOL            styleChecked;
@@ -73,7 +73,7 @@
 {
     if(nil != (self = [super initWithString:utf8String]))
     {
-		_colorMap = [[NSMutableDictionary alloc] init];
+		_colorMap = [[NSCache alloc] init];
         
         CFArrayRef langs = CFLocaleCopyPreferredLanguages();
         CFStringRef langCode = CFArrayGetValueAtIndex (langs, 0);
@@ -88,7 +88,7 @@
 {
 	if(nil != (self = [super initWithContentsOfURL:url]))
     {
-		_colorMap = [[NSMutableDictionary alloc] init];
+		_colorMap = [[NSCache alloc] init];
         
         CFArrayRef langs = CFLocaleCopyPreferredLanguages();
         CFStringRef langCode = CFArrayGetValueAtIndex (langs, 0);
@@ -103,7 +103,7 @@
 {
     if(nil != (self = [super initWithInputStream:inputStream]))
     {
-        _colorMap = [[NSMutableDictionary alloc] init];
+        _colorMap = [[NSCache alloc] init];
         
         CFArrayRef langs = CFLocaleCopyPreferredLanguages();
         CFStringRef langCode = CFArrayGetValueAtIndex (langs, 0);
