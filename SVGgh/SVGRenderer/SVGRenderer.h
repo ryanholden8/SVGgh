@@ -35,6 +35,7 @@
 #import "GHRenderable.h"
 #import "SVGContext.h"
 #import "GHCSSStyle.h"
+#import "SVGAttributedObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -107,6 +108,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @return a UIImage
  */
 -(UIImage*)asImageWithSize:(CGSize)maximumSize andScale:(CGFloat)scale;
+
+-(GHShapeGroup*) contents;
 
 @end
 
