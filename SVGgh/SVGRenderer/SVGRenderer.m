@@ -117,7 +117,7 @@
 {
     if(nil != (self = [super initWithResourceName:resourceName inBundle:bundle]))
     {
-        _colorMap = [[NSMutableDictionary alloc] init];
+        _colorMap = [[NSCache alloc] init];
         
         CFArrayRef langs = CFLocaleCopyPreferredLanguages();
         CFStringRef langCode = CFArrayGetValueAtIndex (langs, 0);
@@ -132,7 +132,7 @@
 {
     if(nil != (self = [super initWithDataAssetNamed:assetName withBundle:bundle]))
     {
-        _colorMap = [[NSMutableDictionary alloc] init];
+        _colorMap = [[NSCache alloc] init];
         
         CFArrayRef langs = CFLocaleCopyPreferredLanguages();
         CFStringRef langCode = CFArrayGetValueAtIndex (langs, 0);
