@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 12/31/12.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "SVGPathGenerator.h"
 #import "SVGUtilities.h"
@@ -1951,3 +1952,5 @@ CGPathRef CreatePathFromSVGPathString(NSString* dAttribute, CGAffineTransform tr
     CGPathRef result = [SVGPathGenerator newCGPathFromSVGPath:dAttribute whileApplyingTransform:transformToApply];
     return result;
 }
+
+#endif

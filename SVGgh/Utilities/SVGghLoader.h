@@ -6,6 +6,8 @@
 //  Copyright © 2016 Generally Helpful. All rights reserved.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import <Foundation/Foundation.h>
 NS_ASSUME_NONNULL_BEGIN
 @class SVGRenderer;
@@ -45,3 +47,5 @@ typedef NS_ENUM(NSInteger, SVGghLoaderType)
 
 
 NS_ASSUME_NONNULL_END
+
+#endif

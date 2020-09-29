@@ -26,6 +26,8 @@
 //  Created by Glenn Howes on 2/6/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
 @import CoreGraphics;
@@ -114,3 +116,5 @@ __attribute__((deprecated)) CGPoint CalculateForward(CGPoint startPoint, CGPoint
 CGPoint CalculateNormal(CGPoint startPoint, CGPoint endPoint);
 
 NS_ASSUME_NONNULL_END
+
+#endif

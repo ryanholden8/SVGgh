@@ -24,6 +24,7 @@
 //  THE SOFTWARE.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -92,3 +93,5 @@ extern const CGFloat kRoundButtonRadius;
 extern const CGFloat kShadowInset;
 
 NS_ASSUME_NONNULL_END
+
+#endif

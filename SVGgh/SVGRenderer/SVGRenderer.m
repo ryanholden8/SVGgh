@@ -25,6 +25,8 @@
 //
 //  Created by Glenn Howes on 1/12/11.
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGRenderer.h"
 #import "GHText.h"
 #import "GHGradient.h"
@@ -423,3 +425,4 @@
 
 @end
 
+#endif

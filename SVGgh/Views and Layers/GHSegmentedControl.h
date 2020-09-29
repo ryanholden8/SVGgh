@@ -28,6 +28,8 @@
 //
 // Interface deliberately similar to UISegmentedControl
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "GHControl.h"
 
 @class SVGRenderer;
@@ -93,3 +95,5 @@ IB_DESIGNABLE // Cocapods users should add the use_frameworks! directive if this
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

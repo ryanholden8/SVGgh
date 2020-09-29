@@ -28,8 +28,6 @@
 
 #import "GHAttributedObject.h"
 
-
-
 NSString*	const kAttributesElementName = @"attributes";
 NSString*	const kContentsElementName = @"contents";
 NSString*	const kElementName		=	@"name";

@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 1/15/11.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "SVGDocumentView.h"
 #import "SVGRendererLayer.h"
@@ -163,3 +164,5 @@
 }
 
 @end
+
+#endif

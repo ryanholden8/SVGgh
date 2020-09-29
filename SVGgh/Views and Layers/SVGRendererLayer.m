@@ -25,6 +25,8 @@
 //
 //  Created by Glenn Howes on 1/15/11.
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGRendererLayer.h"
 #import "SVGUtilities.h"
 
@@ -295,3 +297,5 @@
 	}
 }
 @end
+
+#endif

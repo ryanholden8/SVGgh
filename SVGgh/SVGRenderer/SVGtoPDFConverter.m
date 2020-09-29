@@ -25,6 +25,8 @@
 //  Created by Glenn Howes on 2/4/14.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGgh.h"
 #if defined(__has_feature) && __has_feature(modules)
 @import QuartzCore;
@@ -77,3 +79,5 @@ CGContextRef	CreatePDFContext(const CGRect mediaRect, CFMutableDataRef theData)
     }];
 }
 @end
+
+#endif

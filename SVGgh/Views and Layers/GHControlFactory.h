@@ -30,6 +30,7 @@
  of the UIButton that Apple provides.
 ******/
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -217,3 +218,5 @@ extern UIColor* __nullable  UIColorFromSVGColorString (NSString *  stringToConve
 extern __nullable CGPathRef CreatePathFromSVGPathString(NSString*  dAttribute, CGAffineTransform transformToApply) CF_RETURNS_RETAINED;
 
 NS_ASSUME_NONNULL_END
+
+#endif

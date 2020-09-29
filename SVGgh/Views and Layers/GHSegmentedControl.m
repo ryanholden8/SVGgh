@@ -26,6 +26,7 @@
 //  Created by Glenn Howes on 2015-03-26.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -1699,5 +1700,7 @@ typedef enum GHSegmentType
 }
 
 @end
+
+#endif
 
 #endif

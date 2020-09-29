@@ -26,6 +26,7 @@
 
 //  Created by Glenn Howes on 1/26/14.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "GHButton.h"
 #import "GHControlFactory.h"
@@ -1094,3 +1095,5 @@
 }
 
 @end
+
+#endif

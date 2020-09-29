@@ -24,6 +24,8 @@
 //  THE SOFTWARE.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "GHControl.h"
 #import "GHControlFactory.h"
 
@@ -286,3 +288,5 @@ const CGFloat kShadowInset = 3.0;
 }
 
 @end
+
+#endif

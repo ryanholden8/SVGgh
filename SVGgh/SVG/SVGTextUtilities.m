@@ -26,6 +26,8 @@
 //  Created by Glenn Howes on 2/2/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
 @import CoreText;
@@ -1136,3 +1138,4 @@ const double kStandardSVGFontScale = 1.2;
 
 @end
 
+#endif

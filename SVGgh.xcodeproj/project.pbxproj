@@ -260,6 +260,7 @@
 		21F6BCE51B29A57C00DCEEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F6BCE71B29A8FE00DCEEC2 /* Artwork */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Artwork; sourceTree = "<group>"; };
 		21FF06DC245F982D00AAA5BB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		3701C1DF2522814C00898BCB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		37952A751DA55FD400874BE7 /* NSData+IDZGunzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IDZGunzip.h"; sourceTree = "<group>"; };
 		37952A761DA55FD400874BE7 /* NSData+IDZGunzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IDZGunzip.m"; sourceTree = "<group>"; };
 		37952AAB1DA57ADD00874BE7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -351,6 +352,7 @@
 				37952AAB1DA57ADD00874BE7 /* MobileCoreServices.framework */,
 				37D39BA61DA302E5002E8695 /* libz.tbd */,
 				211E709E1B2AEC1D00667BE9 /* SVGgh.podspec */,
+				3701C1DF2522814C00898BCB /* Package.swift */,
 				21F6BBE41B29A21E00DCEEC2 /* SVGgh */,
 				21F6BBF11B29A21E00DCEEC2 /* SVGghTests */,
 				21F6BC891B29A48600DCEEC2 /* SVGgh Debugging App */,
@@ -377,13 +379,12 @@
 		21F6BBE41B29A21E00DCEEC2 /* SVGgh */ = {
 			isa = PBXGroup;
 			children = (
+				379645A2252368BF0042EF1D /* include */,
 				21F6BC521B29A42800DCEEC2 /* SVG */,
 				21F6BC011B29A41C00DCEEC2 /* SVGRenderer */,
 				21F6BC0F1B29A41C00DCEEC2 /* Third Party */,
 				21F6BC141B29A41C00DCEEC2 /* Utilities */,
 				21F6BC171B29A41C00DCEEC2 /* Views and Layers */,
-				21F6BBE71B29A21E00DCEEC2 /* SVGgh.h */,
-				21F6BBFE1B29A2F100DCEEC2 /* SVGgh.m */,
 				21F6BBE51B29A21E00DCEEC2 /* Supporting Files */,
 			);
 			path = SVGgh;
@@ -566,6 +567,15 @@
 				21FF06DC245F982D00AAA5BB /* CoreServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		379645A2252368BF0042EF1D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				21F6BBE71B29A21E00DCEEC2 /* SVGgh.h */,
+				21F6BBFE1B29A2F100DCEEC2 /* SVGgh.m */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

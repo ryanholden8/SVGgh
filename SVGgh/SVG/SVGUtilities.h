@@ -26,6 +26,8 @@
 //  Created by Glenn Howes on 1/11/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
 #else
@@ -315,3 +317,5 @@ extern const CGColorRenderingIntent	kColoringRenderingIntent;
 
 CGFloat	GetNextCoordinate( const char* buffer,  NSUInteger*  indexPtr, NSUInteger bufferLength,  BOOL* failed);
 NS_ASSUME_NONNULL_END
+
+#endif

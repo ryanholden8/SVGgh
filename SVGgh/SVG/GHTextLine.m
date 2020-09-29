@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 2/6/13.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "GHTextLine.h"
 #import "GHGlyph.h"
@@ -383,3 +384,5 @@
 }
 
 @end
+
+#endif

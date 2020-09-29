@@ -28,6 +28,7 @@
 //  Created by Glenn Howes on 2/4/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -49,3 +50,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 NS_ASSUME_NONNULL_END
+
+#endif

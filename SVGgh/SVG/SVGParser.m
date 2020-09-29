@@ -27,6 +27,8 @@
 //  Created by Glenn Howes on 2/2/11.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 @import UIKit;
 @import MobileCoreServices;
 #import "SVGParser.h"
@@ -316,3 +318,5 @@
 }
 
 @end
+
+#endif

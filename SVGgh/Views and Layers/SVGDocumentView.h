@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 1/15/11.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -96,3 +97,5 @@ IB_DESIGNABLE // Cocapods users should add the use_frameworks! directive if this
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

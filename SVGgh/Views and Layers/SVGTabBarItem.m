@@ -6,6 +6,8 @@
 //  Copyright © 2015 Generally Helpful. All rights reserved.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGTabBarItem.h"
 
 #import "SVGRenderer.h"
@@ -131,3 +133,6 @@
 }
 
 @end
+
+
+#endif

@@ -6,6 +6,8 @@
 //  Copyright © 2016 Generally Helpful. All rights reserved.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGghLoader.h"
 #import "SVGRenderer.h"
 
@@ -89,3 +91,5 @@ static id<SVGghLoader> gLoader = nil;
 }
 
 @end
+
+#endif

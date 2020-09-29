@@ -26,6 +26,7 @@
 //  Created by Glenn Howes on 10/5/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -441,3 +442,4 @@ NSString* const kFacesURLsAddedKey = @"urls";
 
 @end
 
+#endif

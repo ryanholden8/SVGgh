@@ -27,6 +27,8 @@
 //  Created by Glenn Howes on 1/11/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGUtilities.h"
 #import "SVGAttributedObject.h"
 #import "GHImageCache.h"
@@ -2525,3 +2527,5 @@ NSDictionary<NSString*, NSNumber*>* stringToBlendMode()
 
 
 @end
+
+#endif

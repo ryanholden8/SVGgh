@@ -25,6 +25,8 @@
 //
 //  Created by Glenn Howes on 2/3/13.
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
 @import CoreText;
@@ -130,3 +132,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

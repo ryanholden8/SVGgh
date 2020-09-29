@@ -6,6 +6,8 @@
 //  Copyright © 2015 Generally Helpful. All rights reserved.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
 @import UIKit;
@@ -43,3 +45,5 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 NS_ASSUME_NONNULL_END
+
+#endif

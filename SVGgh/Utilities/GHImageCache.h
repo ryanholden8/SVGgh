@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 10/5/13.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #if defined(__has_feature) && __has_feature(modules)
 @import Foundation;
@@ -137,3 +138,5 @@ extern  NSString*  const kFacesAddedToCacheNotificationName;
 extern const CGColorRenderingIntent	kColoringRenderingIntent;
 
 NS_ASSUME_NONNULL_END
+
+#endif

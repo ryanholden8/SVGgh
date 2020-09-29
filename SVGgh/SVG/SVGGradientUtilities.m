@@ -27,6 +27,8 @@
 //  Created by Glenn Howes on 2/11/13.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGGradientUtilities.h"
 
 @implementation SVGGradientUtilities
@@ -59,3 +61,5 @@
     return result;
 }
 @end
+
+#endif

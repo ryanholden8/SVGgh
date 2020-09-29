@@ -25,6 +25,8 @@
 //
 //  Created by Glenn Howes on 6/20/12.
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "GHGradient.h"
 #import "SVGGradientUtilities.h"
 
@@ -353,3 +355,5 @@
     return result;
 }
 @end
+
+#endif

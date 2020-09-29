@@ -24,6 +24,8 @@
 //  THE SOFTWARE.
 
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGgh.h"
 
 void MakeSureSVGghLinks()
@@ -33,3 +35,5 @@ void MakeSureSVGghLinks()
     [GHSegmentedControl makeSureLoaded];
     [SVGTabBarItem makeSureLoaded];
 }
+
+#endif

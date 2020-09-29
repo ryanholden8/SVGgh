@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 3/25/12.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "GHControlFactory.h"
 #import <math.h>
@@ -636,5 +637,4 @@ UIColor* gDefaultSelectedTextColor = nil;
 
 @end
 
-
-
+#endif

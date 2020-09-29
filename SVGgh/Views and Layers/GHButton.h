@@ -39,6 +39,8 @@
   Will make a lightly chromed button with the contents of a file in your app's bundle with the path /Artwork/MenuButton.svg
 */
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "GHControl.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -79,3 +81,5 @@ IB_DESIGNABLE // Cocapods users should add the use_frameworks! directive if this
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

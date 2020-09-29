@@ -28,6 +28,8 @@
 //  Created by Glenn Howes on 1/25/14.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGAttributedObject.h"
 #import "SVGRenderer.h"
 #import "GHGradient.h"
@@ -2411,3 +2413,5 @@
     return result;
 }
 @end
+
+#endif

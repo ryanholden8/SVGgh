@@ -25,6 +25,7 @@
 //
 //  Created by Glenn Howes on 2/3/13.
 
+#if __has_include(<UIKit/UIKit.h>)
 
 #import "GHGlyph.h"
 #import "SVGUtilities.h"
@@ -409,4 +410,4 @@
 
 @end
 
-
+#endif

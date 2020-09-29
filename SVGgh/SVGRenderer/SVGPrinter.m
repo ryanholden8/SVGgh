@@ -25,6 +25,8 @@
 //  Created by Glenn Howes on 2/4/14.
 //
 
+#if __has_include(<UIKit/UIKit.h>)
+
 #import "SVGPrinter.h"
 #import "SVGgh.h"
 #import "SVGtoPDFConverter.h"
@@ -102,3 +104,5 @@
 }
 
 @end
+
+#endif
